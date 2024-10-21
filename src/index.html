@@ -7,18 +7,20 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 <body>
-    <section class="my-12 mx-auto text-center max-w-lg border-solid border-green-600 border">
+    <section class="my-12 mx-auto text-center max-w-lg">
         <p class="font-extrabold mb-4 text-xl">Enter Number</p>
-        <input type="number" class="focus:bg-slate-300 p-4 outline-none border-solid border-slate-700  border-2">
-        <button class="block mx-auto my-6 py-4 px-8 outline font-bold hover:bg-slate-700 hover:scale-110 focus:bg-slate-700 ease-in hover:text-white transition bg-slate-300 border-sky-600 border-solid">
+        <input id="number" type="number" class="focus:bg-slate-300 p-4 outline-none border-solid border-slate-700  border-2">
+        <button onclick="toFahrenheit()" class="block mx-auto my-6 py-4 px-8 outline font-bold hover:bg-slate-700 hover:scale-110 focus:bg-slate-700 ease-in hover:text-white transition bg-slate-300 border-sky-600 border-solid">
             Celcius to Fahrenheit
         </button>
-        <button class="block mx-auto my-6 py-4 px-8 outline font-bold hover:bg-slate-700 hover:scale-110 focus:bg-slate-700 ease-in hover:text-white transition bg-slate-300 border-sky-600 border-solid">
+        <button onclick="toCelcius()" class="block mx-auto my-6 py-4 px-8 outline font-bold hover:bg-slate-700 hover:scale-110 focus:bg-slate-700 ease-in hover:text-white transition bg-slate-300 border-sky-600 border-solid">
             Fahrenheit to Celcius
         </button>
-        <div>
-            <p class="text-2xl font-bold">Result: 100<sup>o</sup>F</p>
+        <div id="Result">
+            <!-- <p class="text-2xl font-bold">Result: 100<sup>o</sup>F</p> -->
         </div>
     </section>
+    <script src="conversion.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
